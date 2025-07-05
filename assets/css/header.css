@@ -1,0 +1,114 @@
+/* Reset y fuente base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 90px;
+}
+
+/* Contenedor principal */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #F5F5F7;
+  border-bottom: 2px solid #ccc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.logo img {
+  height: 54px;
+}
+
+/* Menú normal */
+.menu {
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #007bff;
+}
+
+/* Botón de descarga */
+.boton-descargar button {
+  padding: 10px 20px;
+  background-color: #c1bfbf;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.boton-descargar button:hover {
+  background-color: #bbb;
+}
+
+/* Botón hamburguesa */
+#mobile-menu-btn {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Estilo para el ícono */
+#mobile-menu-btn i {
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 10;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  #mobile-menu-btn {
+    display: block;
+  }
+
+  .boton-descargar {
+    display: none;
+  }
+}
