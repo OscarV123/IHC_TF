@@ -32,9 +32,9 @@ form.addEventListener("submit", function (e) {
     localStorage.setItem("airtrack_sesion_tipo", tipo);
 
     if (tipo === 'Vendedor ambulante') {
-        window.location.href = 'ambulantePrincipal.html';
+        window.location.href = 'ambulantes/ambulantePrincipal.html';
     } else if (tipo === 'Deportista') {
-        window.location.href = 'deportistaPrincipal.html';
+        window.location.href = 'deportistas/deportistaPrincipal.html';
     } else {
         mensaje.textContent = "Tipo de usuario no reconocido.";
     }

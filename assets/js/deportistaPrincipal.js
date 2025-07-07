@@ -242,7 +242,7 @@ sliderDia.addEventListener("input", () => {
 });
 
 const iconoPersona = L.icon({
-    iconUrl: 'assets/imagenes/deportista.png',
+    iconUrl: '../assets/imagenes/deportista.png',
     iconSize: [50, 50],
     iconAnchor: [50, 50],
     popupAnchor: [0, -50]
@@ -282,7 +282,7 @@ const lineaRuta1 = L.polyline(rutaEstacion1, {
 }).addTo(map);
 
 const iconoBanderaVerde = L.icon({
-    iconUrl: 'assets/imagenes/balon.png',
+    iconUrl: '../assets/imagenes/balon.png',
     iconSize: [30, 30],
     iconAnchor: [20, 30],
     popupAnchor: [0, -30]
@@ -292,7 +292,7 @@ const BanderaVerde = L.marker([-12.067998, -77.034635], { icon: iconoBanderaVerd
 BanderaVerde.bindPopup("<strong>Mi Llegada</strong><br>Jr. Puno 3244");
 
 const iconoBanderaVerde2 = L.icon({
-    iconUrl: 'assets/imagenes/balon.png',
+    iconUrl: '../assets/imagenes/balon.png',
     iconSize: [30, 30],
     iconAnchor: [20, 30],
     popupAnchor: [0, -30]

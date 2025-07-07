@@ -242,7 +242,7 @@ sliderDia.addEventListener("input", () => {
 });
 
 const iconoPersona = L.icon({
-    iconUrl: 'assets/imagenes/persona.png',
+    iconUrl: '../assets/imagenes/persona.png',
     iconSize: [30, 30],
     iconAnchor: [30, 30],
     popupAnchor: [0, -30]
@@ -268,7 +268,7 @@ const lineaRuta = L.polyline(rutaEstacion, {
 }).addTo(map);
 
 const iconoBanderaVerde = L.icon({
-    iconUrl: 'assets/imagenes/banderaVerde.png',
+    iconUrl: '../assets/imagenes/banderaVerde.png',
     iconSize: [30, 30],
     iconAnchor: [20, 30],
     popupAnchor: [0, -30]

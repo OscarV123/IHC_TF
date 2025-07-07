@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Programar alerta - AirTrack</title>
-  <link rel="icon" href="assets/imagenes/logoIcono.png" type="image/png">
-  <link rel="stylesheet" href="assets/css/deportista_misComentarios.css">
-  <link rel="stylesheet" href="assets/css/headerSesionIniciada.css">
+  <link rel="icon" href="../assets/imagenes/logoIcono.png" type="image/png">
+  <link rel="stylesheet" href="../assets/css/ambulantes_reportarIncidentes.css">
+  <link rel="stylesheet" href="../assets/css/headerSesionIniciada.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
   <header class="header">
       <div class="logo">
-        <a href="index2.html">
-          <img src="assets/imagenes/logoAirtrack.png" alt="Logo Airtrack" />            
+        <a href="../index1.html">
+          <img src="../assets/imagenes/logoAirtrack.png" alt="Logo Airtrack" />            
         </a>
       </div>
       <nav class="nav">
@@ -21,9 +21,9 @@
         <div class="nav-item"><a href="#">Beneficios</a></div>
         <div class="nav-item"><a href="#">Testimonios</a></div>
         <div class="nav-item"><a href="#">Contacto</a></div>
-        <div class="nav-item"><a href="deportistaPrincipal.html">Ver calidad<br>del aire</a></div>
+        <div class="nav-item"><a href="ambulantePrincipal.html">Ver calidad<br>del aire</a></div>
       </nav>
-      <a href="index.html" class="btn-cerrar">Cerrar sesión</a>
+      <a href="../index.html" class="btn-cerrar">Cerrar sesión</a>
     </header>
 
     <div class="contenedor">
@@ -33,37 +33,40 @@
         </button>
 
         <div class="sidebar-content">
-          <strong class="tipo-usuario">Deportistas</strong>
+          <strong class="tipo-usuario">Ambulantes</strong>
           <nav class="sidebar-nav">
-            <a href="deportista_programarAlerta.html">Programar alerta</a>
-            <a href="deportista_misAlertasRecibidas.html">Mis alertas recibidas</a>
-            <a href="deportista_reportarIncidentes.html">Reportar incidentes</a>
-            <a href="deportistas_misComentarios.html" class="activo">Mis comentarios</a>
-            <a href="deportista_tutorialPreguntasFrecuentes.html">Tutorial y preguntas frecuentes</a>
-            <a href="deportista_otrasApps.html">Otras apps</a>
-            <a href="deportista_verInformeAqi.html">Ver informe de AQI</a>
-            <a href="deportista_informacionContaminantes.html">Información sobre contaminantes</a>
+            <a href="ambulantes_programarAlerta.html">Programar alerta</a>
+            <a href="ambulantes_misAlertasRecibidas.html">Mis alertas recibidas</a>
+            <a href="ambulantes_reportarIncidentes.html" class="activo">Reportar incidentes</a>
+            <a href="ambulantes_tutorialPreguntasFrecuentes.html">Tutorial y preguntas frecuentes</a>
+            <a href="ambulantes_verInformeAqi.html">Ver informe de AQI</a>
           </nav>
         </div>
       </div>
       <section class="reportar-incidente">
             <div class="contenedor-formulario">
-                <h2>Mis comentarios</h2>
+                <h2>Reportar incidentes</h2>
+
                 <form class="formulario-incidente">
                 <label for="ubicacion">Ubicación</label>
                 <div class="mapa">
-                    <img src="assets/imagenes/mapaMarcador.png" alt="Mapa con marcador" />
+                    <img src="../assets/imagenes/mapaMarcador.png" alt="Mapa con marcador" />
                 </div>
                 <input type="text" id="ubicacion" value="Jirón centro escobar" />
+
                 <label for="fecha">Fecha</label>
                 <input type="date" id="fecha" value="2025-07-06" />
+
                 <label for="comentarios">Comentarios</label>
-                <textarea id="comentarios" rows="4">Note cansancio y olor a quema de basura</textarea>
+                <textarea id="comentarios" rows="4">Quema de basura</textarea>
+
                 <button type="submit" class="btn-registrar">Registrar</button>
                 </form>
             </div>
         </section>
+
+
     </div>
-    <script src="assets/js/deportista_reportarIncidentes.js"></script>
+    <script src="../assets/js/ambulante_reportarIncidentes.js"></script>
 </body>
 </html>
