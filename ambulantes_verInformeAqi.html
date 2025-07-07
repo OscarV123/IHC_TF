@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Programar alerta - AirTrack</title>
   <link rel="icon" href="assets/imagenes/logoIcono.png" type="image/png">
-  <link rel="stylesheet" href="assets/css/ambulantes_misAlertasRecibidas.css">
   <link rel="stylesheet" href="assets/css/headerSesionIniciada.css">
+  <link rel="stylesheet" href="assets/css/ambulantes_verInformeAqi.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
@@ -29,47 +32,37 @@
     <div class="contenedor">
       <div class="sidebar" id="sidebar">
         <button class="toggle-btn" id="toggle-btn">
-          <i class="fas fa-chevron-left"></i>
+        <i class="fas fa-chevron-left"></i>
         </button>
-
         <div class="sidebar-content">
-          <strong class="tipo-usuario">Ambulantes</strong>
-          <nav class="sidebar-nav">
+            <strong class="tipo-usuario">Ambulantes</strong>
+            <nav class="sidebar-nav">
             <a href="ambulantes_programarAlerta.html">Programar alerta</a>
-            <a href="ambulantes_misAlertasRecibidas.html" class="activo">Mis alertas recibidas</a>
+            <a href="ambulantes_misAlertasRecibidas.html">Mis alertas recibidas</a>
             <a href="ambulantes_reportarIncidentes.html">Reportar incidentes</a>
             <a href="ambulantes_tutorialPreguntasFrecuentes.html">Tutorial y preguntas frecuentes</a>
-            <a href="ambulantes_verInformeAqi.html">Ver informe de AQI</a>
-          </nav>
+            <a href="ambulantes_verInformeAqi.html" class="activo">Ver informe de AQI</a>
+            </nav>
         </div>
       </div>
-      <section class="alertas-recibidas">
-          <h2>Mis alertas recibidas</h2>
-          <div class="alerta">
-              <div class="alerta-info">
-              <p><strong>AQI:</strong> 120</p>
-              <p><strong>Enviado el:</strong> 03/07/2025 - 3:00 pm.</p>
-              <p><strong>Ubicación:</strong> Jirón Cajamarca</p>
+      
+      <section class="informe-aqi">
+          <h2>Ver informe de AQI</h2>
+          <p class="subtitulo">Generar informe del promedio de AQI durante una fecha específica</p>
+  
+          <form class="formulario-aqi">
+              <div class="campo-fecha">
+                  <label for="fecha-desde">Desde</label>
+                  <input type="date" id="fecha-desde" value="2025-07-06" required />
               </div>
-              <button class="responder-icono">
-              <i class="fas fa-reply"></i>
-              </button>
-          </div>
-          <div class="alerta">
-              <div class="alerta-info">
-              <p><strong>AQI:</strong> 150</p>
-              <p><strong>Enviado el:</strong> 03/07/2025 - 4:00 pm.</p>
-              <p><strong>Ubicación:</strong> Jirón Cajamarca</p>
+              <div class="campo-fecha">
+                  <label for="fecha-hasta">Hasta</label>
+                  <input type="date" id="fecha-hasta" value="2025-07-06" required />
               </div>
-              <button class="responder-icono">
-              <i class="fas fa-reply"></i>
-              </button>
-          </div>
-          <label for="comentarios">Comentarios</label>
-          <textarea id="comentarios" rows="5"></textarea>
-          <button class="btn-responder">Responder</button>
+          </form>
+          <button type="submit" class="btn-generar">Generar informe</button>
       </section>
     </div>
-    <script src="assets/js/ambulantes_misAlertasRecibidas.js"></script>
+    <script src="assets/js/ambulantes_verInformeAqi.js"></script>
 </body>
 </html>

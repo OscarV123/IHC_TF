@@ -135,61 +135,55 @@ body {
 
 /*============= SIDE BAR HASTA AQUí =============*/
 
-.reportar-incidente {
+.informe-aqi {
   padding: 32px;
   max-width: 1200px;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
 }
 
-.reportar-incidente h2 {
+.informe-aqi h2 {
   color: #4b977a;
   font-size: 46px;
-  margin-bottom: 24px;
-  margin-left: 15%;
+  margin-bottom: 8px;
 }
 
-.formulario-incidente {
-  width: 70%;
-  margin: 0 auto;
+.informe-aqi .subtitulo {
+  color: #04a464;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.formulario-aqi {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.campo-fecha {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-}
-
-.formulario-incidente label {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 500;
-  margin-top: 12px;
 }
 
-.formulario-incidente input[type="text"],
-.formulario-incidente input[type="date"],
-.formulario-incidente textarea {
-  width: 100%;
+.campo-fecha label {
+  margin-bottom: 6px;
+}
+
+.campo-fecha input[type="date"] {
   padding: 12px 16px;
   font-size: 18px;
   border: 1px solid #444;
   border-radius: 8px;
   font-family: 'Roboto', sans-serif;
-}
-
-.formulario-incidente input[type="date"] {
-    cursor: pointer;
-}
-
-.formulario-incidente textarea {
-  resize: vertical;
-}
-
-.mapa img {
   width: 100%;
-  border-radius: 8px;
-  object-fit: cover;
+  margin-bottom: 12px;
 }
 
-.btn-registrar {
-  align-self: flex-end;
+.btn-generar {
   background-color: #ccc;
   border: none;
   padding: 10px 24px;
@@ -197,10 +191,9 @@ body {
   font-size: 18px;
   border-radius: 8px;
   cursor: pointer;
-  margin-top: 12px;
-  transition: background-color 0.3s, color 0.3s;
+  height: 48px;
 }
 
-.btn-responder:hover {
-  background-color: #5ccaa0;
+.btn-generar:hover {
+  background-color: #bbb;
 }

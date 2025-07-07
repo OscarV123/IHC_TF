@@ -135,72 +135,99 @@ body {
 
 /*============= SIDE BAR HASTA AQUí =============*/
 
-.reportar-incidente {
+.tutorial-faq {
   padding: 32px;
   max-width: 1200px;
   margin: 0 auto;
   font-family: 'Roboto', sans-serif;
 }
 
-.reportar-incidente h2 {
+.tutorial-faq h2 {
   color: #4b977a;
   font-size: 46px;
-  margin-bottom: 24px;
-  margin-left: 15%;
+  margin-bottom: 8px;
 }
 
-.formulario-incidente {
-  width: 70%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.formulario-incidente label {
-  font-size: 22px;
-  font-weight: 500;
-  margin-top: 12px;
-}
-
-.formulario-incidente input[type="text"],
-.formulario-incidente input[type="date"],
-.formulario-incidente textarea {
-  width: 100%;
-  padding: 12px 16px;
+.tutorial-faq .subtitulo {
+  color: #269d68;
   font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.video-contenedor {
+  width: 100%;
+  aspect-ratio: 16 / 9;
   border: 1px solid #444;
   border-radius: 8px;
-  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  margin-bottom: 32px;
 }
 
-.formulario-incidente input[type="date"] {
-    cursor: pointer;
-}
-
-.formulario-incidente textarea {
-  resize: vertical;
-}
-
-.mapa img {
+.video-contenedor iframe {
   width: 100%;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-.btn-registrar {
-  align-self: flex-end;
-  background-color: #ccc;
+  height: 100%;
   border: none;
-  padding: 10px 24px;
-  font-weight: bold;
-  font-size: 18px;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 12px;
-  transition: background-color 0.3s, color 0.3s;
+  display: block;
 }
 
-.btn-responder:hover {
-  background-color: #5ccaa0;
+.faq-titulo {
+  color: #2fa36b;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+details {
+  margin-bottom: 16px;
+  font-size: 18px;
+  color: #1e8a54;
+  cursor: pointer;
+  border-left: 3px solid #2fa36b;
+  padding-left: 12px;
+}
+
+details summary {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 8px;
+  list-style: none;
+  position: relative;
+  padding-left: 24px;
+}
+
+details summary::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 14px;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.faq-lista {
+  list-style: none;
+  background-color: #e6e6e6;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 0;
+}
+
+.faq-lista li {
+  padding: 8px 0;
+  font-size: 16px;
+  color: #444;
+  display: flex;
+  align-items: center;
+}
+
+.faq-lista li::before {
+  content: "▶";
+  margin-right: 10px;
+  font-size: 12px;
+  color: #888;
 }
