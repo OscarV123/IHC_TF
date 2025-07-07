@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -134,92 +133,75 @@ body {
   font-weight: bold;
 }
 
-.contenido {
-  flex: 1;
+/*============= SIDE BAR HASTA AQUí =============*/
+
+
+.reportar-incidente {
   padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
 }
 
-h2 {
+.reportar-incidente h2 {
   color: #4b977a;
-  margin-bottom: 16px;
   font-size: 46px;
+  margin-bottom: 24px;
   margin-left: 15%;
 }
 
-.chips-horarios-1 {
+.formulario-incidente {
+  width: 70%;
+  margin: 0 auto;
   display: flex;
-  margin-left: 15%;
+  flex-direction: column;
   gap: 16px;
 }
 
-.chips-horarios-2 {
-  display: flex;
-  margin-left: 17%;
-  margin-top: 1%;
-  margin-bottom: 4%;
-  gap: 16px;
+.formulario-incidente label {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 12px;
 }
 
-.chips-ubicacion {
-  display: flex;
-  margin-left: 15%;
-  gap: 16px;
+.formulario-incidente input[type="text"],
+.formulario-incidente input[type="date"],
+.formulario-incidente textarea {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 18px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
 }
 
-.chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 32px;
+.formulario-incidente input[type="date"] {
+    cursor: pointer;
 }
 
-.chip {
-  padding: 8px 16px;
-  border: 2px solid #ccc;
-  border-radius: 16px;
-  font-size: 16px;
-  background-color: #fff;
-  cursor: pointer;
-  align-items: center;
-  justify-items: center;
-  transition: background-color 0.3s, color 0.3s;
-  transition: border 0.3s, color 0.3s;
+.formulario-incidente textarea {
+  resize: vertical;
 }
 
-.chip:hover {
+.mapa img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.btn-registrar {
+  align-self: flex-end;
   background-color: #ccc;
-  border: 2px solid #279474;
-  background-color: white;
-  color: #279474;
-}
-
-.chip-activo {
-  background-color: #3ccaa0;
-  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 8px;
   cursor: pointer;
+  margin-top: 12px;
   transition: background-color 0.3s, color 0.3s;
 }
 
-.chip-activo:hover {
-  background-color: #3ccaa0;
-  color: #fff;
-  border: 2px solid #3ccaa0;
-  background-color: white;
-  color: #3ccaa0;
-}
-
-.chip-verde {
-  background-color: #3ccaa0;
-  color: white;
-}
-
-.chip-add {
-  border: 2px solid #ccc;
-  border-radius: 25%;
-  width: 36px;
-  height: 36px;
-  font-size: 20px;
-  cursor: pointer;
-  background: #fff;
-  padding: 0;
+.btn-responder:hover {
+  background-color: #5ccaa0;
 }

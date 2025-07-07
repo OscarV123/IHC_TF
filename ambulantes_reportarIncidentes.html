@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Programar alerta - AirTrack</title>
   <link rel="icon" href="assets/imagenes/logoIcono.png" type="image/png">
-  <link rel="stylesheet" href="assets/css/ambulantes_programarAlerta.css">
+  <link rel="stylesheet" href="assets/css/ambulantes_reportarIncidentes.css">
   <link rel="stylesheet" href="assets/css/headerSesionIniciada.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
@@ -35,38 +35,38 @@
         <div class="sidebar-content">
           <strong class="tipo-usuario">Ambulantes</strong>
           <nav class="sidebar-nav">
-            <a href="ambulantes_programarAlerta.html" class="activo">Programar alerta</a>
+            <a href="ambulantes_programarAlerta.html">Programar alerta</a>
             <a href="ambulantes_misAlertasRecibidas.html">Mis alertas recibidas</a>
-            <a href="ambulantes_reportarIncidentes.html">Reportar incidentes</a>
+            <a href="ambulantes_reportarIncidentes.html" class="activo">Reportar incidentes</a>
             <a href="#">Tutorial y preguntas frecuentes</a>
             <a href="#">Ver informe de AQI</a>
           </nav>
         </div>
       </div>
+      <section class="reportar-incidente">
+            <div class="contenedor-formulario">
+                <h2>Reportar incidentes</h2>
 
-      <main class="contenido">
-        <h2>Mis horarios</h2>
-        <div class="chips-horarios-1">
-          <span class="chip">4:00 pm. - 2:00 am.</span>
-          <span class="chip">10:00 am. - 6:00 pm.</span>
-          <span class="chip chip-activo">8:00 am. - 4:00 pm.</span>
-        </div>
-        
-        <div class="chips-horarios-2">
-          <span class="chip">9:00 am. - 5:00 pm.</span>
-          <span class="chip">1:00 pm. - 9:00 pm.</span>
-          <button class="chip-add">+</button>
-        </div>
-        
-        <h2>Mis ubicación</h2>
-        <div class="chips-ubicacion">
-          <span class="chip chip-verde">Jirón Áncash</span>
-          <button class="chip-add">+</button>
-        </div>
-      </main>
+                <form class="formulario-incidente">
+                <label for="ubicacion">Ubicación</label>
+                <div class="mapa">
+                    <img src="assets/imagenes/reportarIncidentes.png" alt="Mapa con marcador" />
+                </div>
+                <input type="text" id="ubicacion" value="Jirón centro escobar" />
+
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" value="2025-07-06" />
+
+                <label for="comentarios">Comentarios</label>
+                <textarea id="comentarios" rows="4">Quema de basura</textarea>
+
+                <button type="submit" class="btn-registrar">Registrar</button>
+                </form>
+            </div>
+        </section>
+
+
     </div>
-
-
-    <script src="assets/js/ambulantes_programaAlerta.js"></script>
+    <script src="assets/js/ambulante_reportarIncidentes.js"></script>
 </body>
 </html>
