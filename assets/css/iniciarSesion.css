@@ -1,5 +1,4 @@
-
-.registro {
+.inicio-sesion {
     max-width: 600px;
     margin: 60px auto;
     padding: 20px;
@@ -39,21 +38,14 @@
     color: #999;
 }
 
-.campo-radio {
-    display: flex;
-    justify-content: space-between;
-    font-size: 15px;
+.btn-outline {
+    border: 1px solid #007bff;
+    padding: 8px 14px;
+    border-radius: 6px;
+    background-color: #fff;
     color: #007bff;
-}
-
-.campo-check label {
     font-size: 14px;
-    color: #007bff;
-}
-
-.campo-check a {
-    color: #007bff;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .btn-continuar {
@@ -65,8 +57,4 @@
     font-size: 14px;
     cursor: pointer;
     transition: background 0.3s ease;
-}
-
-.btn-continuar:hover {
-    background-color: #bbb;
 }

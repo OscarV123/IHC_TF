@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -81,7 +82,7 @@ body {
 }
 
 /* Botón Registrarse (relleno verde) */
-.btn-Registrarse {
+.btn-registrarse {
   background-color: #66d1a8;
   color: #fff;
   border: none;
