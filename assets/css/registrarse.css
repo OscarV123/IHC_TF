@@ -1,0 +1,72 @@
+
+.registro {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo label {
+    font-weight: bold;
+    color: #4f8a6d;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-icono {
+    position: relative;
+}
+
+.input-icono input {
+    width: 92%;
+    padding: 10px 40px 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.input-icono i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.campo-radio {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #007bff;
+}
+
+.campo-check label {
+    font-size: 14px;
+    color: #007bff;
+}
+
+.campo-check a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.btn-continuar {
+    background-color: #ccc;
+    color: #111;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-continuar:hover {
+    background-color: #bbb;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrarse - AirTrack</title>
+    <link rel="stylesheet" href="assets/css/registrarse.css" />
+    <link rel="stylesheet" href="assets/css/headerNoSesionIniciada.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+            <img src="assets/imagenes/logoAirtrack.png" alt="Logo Airtrack" />            
+            </a>        
+        </div>
+        <nav class="nav">
+            <div class="nav-item"><a href="#">Funcionalidades</a></div>
+            <div class="nav-item"><a href="#">Beneficios</a></div>
+            <div class="nav-item"><a href="#">Testimonios</a></div>
+            <div class="nav-item"><a href="#">Contacto</a></div>
+        </nav>
+        <button class="btn-iniciarSesion">Iniciar sesión</button>
+        <button class="btn-Registrarse">Registrarse</button>
+    </header>
+
+    <section class="registro">
+        <form class="formulario" id="registro-form" novalidate>
+            <div class="campo">
+                <label>Nombre y apellido</label>
+                <div class="input-icono">
+                    <input type="text" id="nombre" />
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label>Email</label>
+                <div class="input-icono">
+                    <input type="email" id="email" />
+                    <i class="fas fa-envelope"></i>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label>Password</label>
+                <div class="input-icono">
+                    <input type="password" id="password" />
+                    <i class="fas fa-lock"></i>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label>Número de celular</label>
+                <div class="input-icono">
+                    <input type="tel" id="celular" />
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+            </div>
+
+            <div class="campo-radio">
+                <label><input type="radio" name="perfil" value="Vendedor ambulante" checked /> Vendedor
+                    ambulante</label>
+                <label><input type="radio" name="perfil" value="Deportista" /> Deportista</label>
+            </div>
+
+            <div class="campo-check">
+                <label><input type="checkbox" /> Desea recibir recomendaciones de AirTrack</label>
+            </div>
+
+            <div class="campo-check">
+                <label><input type="checkbox" /> Desea recibir notificaciones sobre la calidad del aire y el AQI
+                    previsto por hora</label>
+            </div>
+
+            <div class="campo-check">
+                <label>
+                    <input type="checkbox" id="terminos" />
+                    Al hacer clic aquí, declaro que he leído y entendido los
+                    <a href="#">términos y condiciones</a> de AirTrack
+                </label>
+            </div>
+
+            <button type="submit" class="btn-continuar">Continuar</button>
+        </form>
+    </section>
+
+    <script src="assets/js/registrarse.js"></script>
+</body>
+</html>
