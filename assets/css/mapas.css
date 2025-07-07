@@ -1,19 +1,24 @@
+
+
 /* Menú flotante tipo off-canvas */
 .menu-toggle {
     position: fixed;
-    top: 300px;
+    top: 275px;
     left: 20px;
     background-color: white;
     border: none;
     padding: 10px 14px;
     border-radius: 10px;
+    font-size: 35px;
     cursor: pointer;
     z-index: 1001;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
 }
 
 .offcanvas-menu {
     position: fixed;
+    
     top: 350px;
     left: -260px;
     width: 240px;
@@ -30,7 +35,7 @@
 }
 
 .offcanvas-menu h3 {
-    margin-top: 0;
+    margin-bottom: 20px;
     font-weight: bold;
 }
 

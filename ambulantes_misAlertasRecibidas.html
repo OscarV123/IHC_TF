@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Programar alerta - AirTrack</title>
   <link rel="icon" href="assets/imagenes/logoIcono.png" type="image/png">
-  <link rel="stylesheet" href="assets/css/ambulantes_programarAlerta.css">
+  <link rel="stylesheet" href="assets/css/ambulantes_misAlertasRecibidas.css">
   <link rel="stylesheet" href="assets/css/headerSesionIniciada.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
@@ -35,38 +35,41 @@
         <div class="sidebar-content">
           <strong class="tipo-usuario">Ambulantes</strong>
           <nav class="sidebar-nav">
-            <a href="ambulantes_programarAlerta.html" class="activo">Programar alerta</a>
-            <a href="ambulantes_misAlertasRecibidas.html">Mis alertas recibidas</a>
+            <a href="ambulantes_programarAlerta.html">Programar alerta</a>
+            <a href="ambulantes_misAlertasRecibidas.html" class="activo">Mis alertas recibidas</a>
             <a href="#">Reportar incidentes</a>
             <a href="#">Tutorial y preguntas frecuentes</a>
             <a href="#">Ver informe de AQI</a>
           </nav>
         </div>
       </div>
-
-      <main class="contenido">
-        <h2>Mis horarios</h2>
-        <div class="chips-horarios-1">
-          <span class="chip">4:00 pm. - 2:00 am.</span>
-          <span class="chip">10:00 am. - 6:00 pm.</span>
-          <span class="chip chip-activo">8:00 am. - 4:00 pm.</span>
-        </div>
-        
-        <div class="chips-horarios-2">
-          <span class="chip">9:00 am. - 5:00 pm.</span>
-          <span class="chip">1:00 pm. - 9:00 pm.</span>
-          <button class="chip-add">+</button>
-        </div>
-        
-        <h2>Mis ubicación</h2>
-        <div class="chips-ubicacion">
-          <span class="chip chip-verde">Jirón Áncash</span>
-          <button class="chip-add">+</button>
-        </div>
-      </main>
+      <section class="alertas-recibidas">
+          <h2>Mis alertas recibidas</h2>
+          <div class="alerta">
+              <div class="alerta-info">
+              <p><strong>AQI:</strong> 120</p>
+              <p><strong>Enviado el:</strong> 03/07/2025 - 3:00 pm.</p>
+              <p><strong>Ubicación:</strong> Jirón Cajamarca</p>
+              </div>
+              <button class="responder-icono">
+              <i class="fas fa-reply"></i>
+              </button>
+          </div>
+          <div class="alerta">
+              <div class="alerta-info">
+              <p><strong>AQI:</strong> 150</p>
+              <p><strong>Enviado el:</strong> 03/07/2025 - 4:00 pm.</p>
+              <p><strong>Ubicación:</strong> Jirón Cajamarca</p>
+              </div>
+              <button class="responder-icono">
+              <i class="fas fa-reply"></i>
+              </button>
+          </div>
+          <label for="comentarios">Comentarios</label>
+          <textarea id="comentarios" rows="5"></textarea>
+          <button class="btn-responder">Responder</button>
+      </section>
     </div>
-
-
     <script src="assets/js/ambulantes_programaAlerta.js"></script>
 </body>
 </html>
