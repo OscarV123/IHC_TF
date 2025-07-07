@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vendedor - AirTrack</title>
+    <link rel="icon" href="assets/imagenes/logoIcono.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/headerSesionIniciada.css"/>
+    <link rel="stylesheet" href="assets/css/ambulantePrincipal.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <header class="header">
+      <div class="logo">
+          <a href="index.html">
+            <img src="assets/imagenes/logoAirtrack.png" alt="Logo Airtrack" />            
+          </a>
+      </div>
+      <nav class="nav">
+          <div class="nav-item"><a href="#">Funcionalidades</a></div>
+          <div class="nav-item"><a href="#">Beneficios</a></div>
+          <div class="nav-item"><a href="#">Testimonios</a></div>
+          <div class="nav-item"><a href="#">Contacto</a></div>
+          <div class="nav-item"><a href="#">Ver calidad<br>del aire</a></div>
+      </nav>
+      <a href="index.html" class="btn-cerrar">Cerrar sesión</a>
+    </header>
+
+    <!-- Botón flotante -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <!-- Menú lateral -->
+    <aside class="offcanvas-menu" id="menu">
+        <h3>Vendedor Ambulante</h3>
+        <a href="#">Ver calidad del aire</a>
+        <a href="#">Programar alerta</a>
+        <a href="#">Mis alertas recibidas</a>
+        <a href="#">Reportar incidentes</a>
+        <a href="#">Tutorial y preguntas frecuentes</a>
+        <a href="#">Ver informe de AQI</a>
+    </aside>
+
+    <!-- Mapa -->
+    <main class="map-container">
+        <div id="map"></div>
+        <div class="aqi-legend">
+        <h4>Indicador AQI</h4>
+        <div><span class="color-box buena"></span> Buena (0–50)</div>
+        <div><span class="color-box moderada"></span> Moderada (51–100)</div>
+        <div><span class="color-box danina"></span> Dañina (101+)</div>
+        </div>
+        <div class="timeline-control">
+        <label for="sliderDia">Fecha:</label>
+        <input type="range" id="sliderDia" min="0" max="5" step="1" value="5" />
+        <span id="valorDia">06-Jul-2025</span>
+        </div>
+    </main>
+
+    <script src="assets/js/ambulantePrincipal.js"></script>
+</body>
+</html>
