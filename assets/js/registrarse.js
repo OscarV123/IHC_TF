@@ -39,5 +39,5 @@ form.addEventListener("submit", function (e) {
     localStorage.setItem("airtrack_password", password);
     localStorage.setItem("airtrack_perfil", perfil);
 
-    window.location.href = "iniciar_sesion.html";
+    window.location.href = "iniciarSesion.html";
 });

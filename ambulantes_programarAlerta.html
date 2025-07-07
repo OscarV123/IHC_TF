@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programar alerta - AirTrack</title>
+  <link rel="icon" href="assets/imagenes/logoIcono.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/ambulantes_programarAlerta.css">
+  <link rel="stylesheet" href="assets/css/headerSesionIniciada.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+      <div class="logo">
+        <a href="index1.html">
+          <img src="assets/imagenes/logoAirtrack.png" alt="Logo Airtrack" />            
+        </a>
+      </div>
+      <nav class="nav">
+        <div class="nav-item"><a href="#">Funcionalidades</a></div>
+        <div class="nav-item"><a href="#">Beneficios</a></div>
+        <div class="nav-item"><a href="#">Testimonios</a></div>
+        <div class="nav-item"><a href="#">Contacto</a></div>
+        <div class="nav-item"><a href="#">Ver calidad<br>del aire</a></div>
+      </nav>
+      <a href="index.html" class="btn-cerrar">Cerrar sesión</a>
+    </header>
+
+    <div class="contenedor">
+      <div class="sidebar" id="sidebar">
+        <button class="toggle-btn" id="toggle-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="sidebar-content">
+          <strong class="tipo-usuario">Ambulantes</strong>
+          <nav class="sidebar-nav">
+            <a href="#" class="activo">Programar alerta</a>
+            <a href="#">Mis alertas recibidas</a>
+            <a href="#">Reportar incidentes</a>
+            <a href="#">Tutorial y preguntas frecuentes</a>
+            <a href="#">Ver informe de AQI</a>
+          </nav>
+        </div>
+      </div>
+
+      <main class="contenido">
+        <h2>Mis horarios</h2>
+        <div class="chips-horarios-1">
+          <span class="chip">4:00 pm. - 2:00 am.</span>
+          <span class="chip">10:00 am. - 6:00 pm.</span>
+          <span class="chip chip-activo">8:00 am. - 4:00 pm.</span>
+        </div>
+        
+        <div class="chips-horarios-2">
+          <span class="chip">9:00 am. - 5:00 pm.</span>
+          <span class="chip">1:00 pm. - 9:00 pm.</span>
+          <button class="chip-add">+</button>
+        </div>
+        
+        <h2>Mis ubicación</h2>
+        <div class="chips-ubicacion">
+          <span class="chip chip-verde">Jirón Áncash</span>
+          <button class="chip-add">+</button>
+        </div>
+      </main>
+    </div>
+
+
+    <script src="assets/js/ambulantes_programaAlerta.js"></script>
+</body>
+</html>
