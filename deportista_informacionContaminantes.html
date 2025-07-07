@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programar alerta - AirTrack</title>
+  <link rel="icon" href="assets/imagenes/logoIcono.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/headerSesionIniciada.css">
+  <link rel="stylesheet" href="assets/css/deportista_informacionContaminantes.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+      <div class="logo">
+        <a href="index2.html">
+          <img src="assets/imagenes/logoAirtrack.png" alt="Logo Airtrack" />            
+        </a>
+      </div>
+      <nav class="nav">
+        <div class="nav-item"><a href="#">Funcionalidades</a></div>
+        <div class="nav-item"><a href="#">Beneficios</a></div>
+        <div class="nav-item"><a href="#">Testimonios</a></div>
+        <div class="nav-item"><a href="#">Contacto</a></div>
+        <div class="nav-item"><a href="deportistaPrincipal.html">Ver calidad<br>del aire</a></div>
+      </nav>
+      <a href="index.html" class="btn-cerrar">Cerrar sesión</a>
+    </header>
+
+    <div class="contenedor">
+      <div class="sidebar" id="sidebar">
+          <button class="toggle-btn" id="toggle-btn">
+          <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="sidebar-content">
+            <strong class="tipo-usuario">Deportistas</strong>
+            <nav class="sidebar-nav">
+                <a href="deportista_programarAlerta.html">Programar alerta</a>
+                <a href="deportista_misAlertasRecibidas.html">Mis alertas recibidas</a>
+                <a href="deportista_reportarIncidentes.html">Reportar incidentes</a>
+                <a href="deportistas_misComentarios.html">Mis comentarios</a>
+                <a href="deportista_tutorialPreguntasFrecuentes.html">Tutorial y preguntas frecuentes</a>
+                <a href="deportista_otrasApps.html">Otras apps</a>
+                <a href="deportista_verInformeAqi.html">Ver informe de AQI</a>
+                <a href="deportista_informacionContaminantes.html" class="activo">Información sobre contaminantes</a>
+            </nav>
+          </div>
+      </div>
+      
+      <section class="info-contaminantes">
+            <h2>Información sobre contaminantes</h2>
+            <article>
+                <h3>Calidad del aire y rendimiento deportivo</h3>
+                <p>
+                La contaminación del aire puede tener un impacto significativo en el rendimiento de los deportistas, especialmente en entrenamientos al aire libre. A continuación te explicamos los principales contaminantes y sus efectos:
+                </p>
+            </article>
+            <hr />
+            <article>
+                <h4>Partículas en suspensión (PM2.5 y PM10)</h4>
+                <p class="subtitulo">¿Qué son?</p>
+                <p>
+                Son pequeñas partículas sólidas o líquidas en el aire, muchas veces invisibles. Las PM2.5 son tan pequeñas que pueden penetrar profundamente en los pulmones.
+                </p>
+                <p class="subtitulo">¿Cómo afectan al deportista?</p>
+                <ul>
+                <li>Disminuyen la capacidad pulmonar.</li>
+                <li>Aumentan la fatiga respiratoria.</li>
+                <li>Pueden provocar inflamación de las vías respiratorias.</li>
+                <li>En exposiciones prolongadas, reducen el VO₂ máx (consumo máximo de oxígeno).</li>
+                </ul>
+            </article>
+            <hr />
+            <article>
+                <h4>Ozono troposférico (O₃)</h4>
+                <p class="subtitulo">¿Qué es?</p>
+                <p>
+                Es un gas que se forma por reacciones químicas entre contaminantes y la luz solar, especialmente en días calurosos.
+                </p>
+                <p class="subtitulo">¿Cómo afecta al deportista?</p>
+                <ul>
+                <li>Irrita ojos, nariz y garganta.</li>
+                <li>Puede causar dificultad para respirar.</li>
+                <li>Reduce la resistencia durante actividades prolongadas.</li>
+                <li>Puede provocar tos y sensación de opresión en el pecho.</li>
+                </ul>
+            </article>
+            <hr />
+            <article>
+                <h4>Dióxido de nitrógeno (NO₂)</h4>
+                <p class="subtitulo">¿Qué es?</p>
+                <p>Un gas tóxico generado principalmente por vehículos y procesos industriales.</p>
+                <p class="subtitulo">¿Cómo afecta al deportista?</p>
+                <ul>
+                <li>Inflama las vías respiratorias.</li>
+                <li>Aumenta la susceptibilidad a infecciones respiratorias.</li>
+                <li>Afecta el rendimiento en deportes de resistencia.</li>
+                </ul>
+            </article>
+            <hr />
+            <article>
+                <h4>Monóxido de carbono (CO)</h4>
+                <p class="subtitulo">¿Qué es?</p>
+                <p>Un gas incoloro e inodoro generado por la combustión incompleta de combustibles fósiles.</p>
+                <p class="subtitulo">¿Cómo afecta al deportista?</p>
+                <ul>
+                <li>Reduce la cantidad de oxígeno que llega a los músculos.</li>
+                <li>Provoca fatiga temprana y mareos.</li>
+                <li>Disminuye la eficiencia cardiovascular.</li>
+                </ul>
+            </article>
+            <hr />
+            <article>
+                <h3>Recomendaciones</h3>
+                <p>
+                Antes de salir a entrenar, tómate un momento para revisar el índice de calidad del aire (AQI). Entrenar al aire libre es genial, pero hacerlo cuando el aire está contaminado puede afectar tu salud y rendimiento. Evita las horas pico, como en la mañana entre las 7 y 9, o en la tarde de 5 a 7, que es cuando hay más tráfico y los niveles de contaminación suelen ser más altos. Si puedes, elige rutas por parques, áreas verdes o lejos de avenidas muy transitadas. Y si el aire no está en su mejor momento, considera usar una mascarilla deportiva con filtro; puede marcar la diferencia. Recuerda también mantenerte bien hidratado, escuchar a tu cuerpo y no forzarte si sientes fatiga, tos o te cuesta respirar. Cuidarte también es parte del entrenamiento.
+                </p>
+            </article>
+        </section>
+
+        
+    </div>
+    <script src="assets/js/deportista_tutorialPreguntasFrecuentes.js"></script>
+</body>
+</html>

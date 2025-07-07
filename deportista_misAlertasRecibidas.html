@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programar alerta - AirTrack</title>
+  <link rel="icon" href="assets/imagenes/logoIcono.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/ambulantes_misAlertasRecibidas.css">
+  <link rel="stylesheet" href="assets/css/headerSesionIniciada.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+      <div class="logo">
+        <a href="index2.html">
+          <img src="assets/imagenes/logoAirtrack.png" alt="Logo Airtrack" />            
+        </a>
+      </div>
+      <nav class="nav">
+        <div class="nav-item"><a href="#">Funcionalidades</a></div>
+        <div class="nav-item"><a href="#">Beneficios</a></div>
+        <div class="nav-item"><a href="#">Testimonios</a></div>
+        <div class="nav-item"><a href="#">Contacto</a></div>
+        <div class="nav-item"><a href="deportistaPrincipal.html">Ver calidad<br>del aire</a></div>
+      </nav>
+      <a href="index.html" class="btn-cerrar">Cerrar sesión</a>
+    </header>
+
+    <div class="contenedor">
+      <div class="sidebar" id="sidebar">
+        <button class="toggle-btn" id="toggle-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="sidebar-content">
+          <strong class="tipo-usuario">Deportistas</strong>
+          <nav class="sidebar-nav">
+            <a href="deportista_programarAlerta.html">Programar alerta</a>
+            <a href="deportista_misAlertasRecibidas.html" class="activo">Mis alertas recibidas</a>
+            <a href="deportista_reportarIncidentes.html">Reportar incidentes</a>
+            <a href="deportistas_misComentarios.html">Mis comentarios</a>
+            <a href="deportista_tutorialPreguntasFrecuentes.html">Tutorial y preguntas frecuentes</a>
+            <a href="deportista_otrasApps.html">Otras apps</a>
+            <a href="deportista_verInformeAqi.html">Ver informe de AQI</a>
+            <a href="deportista_informacionContaminantes.html">Información sobre contaminantes</a>
+          </nav>
+        </div>
+      </div>
+      <section class="alertas-recibidas">
+          <h2>Mis alertas recibidas</h2>
+          <div class="alerta">
+              <div class="alerta-info">
+              <p><strong>AQI:</strong> 120</p>
+              <p><strong>Enviado el:</strong> 03/07/2025 - 3:00 pm.</p>
+              <p><strong>Ubicación:</strong> Jirón Cajamarca</p>
+              </div>
+              <button class="responder-icono">
+              <i class="fas fa-reply"></i>
+              </button>
+          </div>
+          <div class="alerta">
+              <div class="alerta-info">
+              <p><strong>AQI:</strong> 150</p>
+              <p><strong>Enviado el:</strong> 03/07/2025 - 4:00 pm.</p>
+              <p><strong>Ubicación:</strong> Jirón Cajamarca</p>
+              </div>
+              <button class="responder-icono">
+              <i class="fas fa-reply"></i>
+              </button>
+          </div>
+          <label for="comentarios">Comentarios</label>
+          <textarea id="comentarios" rows="5"></textarea>
+          <button class="btn-responder">Responder</button>
+      </section>
+    </div>
+    <script src="assets/js/ambulantes_misAlertasRecibidas.js"></script>
+</body>
+</html>

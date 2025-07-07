@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #fff;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  background-color: #defff2;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.sidebar.collapsed {
+  transform: translateX(-100%);
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.tipo-usuario {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.sidebar-nav a {
+  display: block;
+  padding: 30px 0;
+  color: #000;
+  font-weight: 500;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.sidebar-nav a.activo {
+  font-weight: bold;
+}
+
+/* Botón toggle flotante centrado verticalmente */
+.toggle-btn {
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+  background-color: #defff2;
+  border: none;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  cursor: pointer;
+  z-index: 1100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.toggle-btn i {
+  transition: transform 0.3s ease;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.sidebar.collapsed .toggle-btn i {
+  transform: rotate(180deg);
+}
+
+/* === ESTILO UNIFICADO PARA ALERTAS RECIBIDAS === */
+
+.alertas-recibidas {
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.alertas-recibidas h2 {
+  color: #4b977a;
+  font-size: 46px;
+  margin-bottom: 24px;
+  margin-left: 15%;
+}
+
+.alerta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 0 auto 16px;
+  width: 70%;
+}
+
+.alerta-info p {
+  margin: 4px 0;
+  font-size: 18px;
+}
+
+.responder-icono {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #111;
+}
+
+.responder-icono:hover {
+  color: #4b977a;
+}
+
+label[for="comentarios"] {
+  display: block;
+  margin: 32px 0 8px;
+  font-weight: 500;
+  font-size: 22px;
+  margin-left: 15%;
+}
+
+textarea {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  padding: 16px;
+  font-size: 18px;
+  border: 1px solid #888;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.btn-responder {
+  display: block;
+  margin: 25px 0px 0px 72%;
+  background-color: #ccc;
+  border: none;
+  padding: 10px 24px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-responder:hover {
+  background-color: #5ccaa0;
+}

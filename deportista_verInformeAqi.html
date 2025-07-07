@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programar alerta - AirTrack</title>
+  <link rel="icon" href="assets/imagenes/logoIcono.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/headerSesionIniciada.css">
+  <link rel="stylesheet" href="assets/css/deportista_verInformeAqi.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+      <div class="logo">
+        <a href="index2.html">
+          <img src="assets/imagenes/logoAirtrack.png" alt="Logo Airtrack" />            
+        </a>
+      </div>
+      <nav class="nav">
+        <div class="nav-item"><a href="#">Funcionalidades</a></div>
+        <div class="nav-item"><a href="#">Beneficios</a></div>
+        <div class="nav-item"><a href="#">Testimonios</a></div>
+        <div class="nav-item"><a href="#">Contacto</a></div>
+        <div class="nav-item"><a href="deportistaPrincipal.html">Ver calidad<br>del aire</a></div>
+      </nav>
+      <a href="index.html" class="btn-cerrar">Cerrar sesión</a>
+    </header>
+
+    <div class="contenedor">
+      <div class="sidebar" id="sidebar">
+          <button class="toggle-btn" id="toggle-btn">
+          <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="sidebar-content">
+            <strong class="tipo-usuario">Deportistas</strong>
+            <nav class="sidebar-nav">
+                <a href="deportista_programarAlerta.html">Programar alerta</a>
+                <a href="deportista_misAlertasRecibidas.html">Mis alertas recibidas</a>
+                <a href="deportista_reportarIncidentes.html">Reportar incidentes</a>
+                <a href="deportistas_misComentarios.html">Mis comentarios</a>
+                <a href="deportista_tutorialPreguntasFrecuentes.html">Tutorial y preguntas frecuentes</a>
+                <a href="deportista_otrasApps.html">Otras apps</a>
+                <a href="deportista_verInformeAqi.html" class="activo">Ver informe de AQI</a>
+                <a href="deportista_informacionContaminantes.html">Información sobre contaminantes</a>
+            </nav>
+          </div>
+      </div>
+      
+      <section class="informe-aqi">
+          <h2>Ver informe de AQI</h2>
+          <p class="subtitulo">Generar informe del promedio de AQI durante una fecha específica</p>
+  
+          <form class="formulario-aqi">
+              <div class="campo-fecha">
+                  <label for="fecha-desde">Desde</label>
+                  <input type="date" id="fecha-desde" value="2025-07-06" required />
+              </div>
+              <div class="campo-fecha">
+                  <label for="fecha-hasta">Hasta</label>
+                  <input type="date" id="fecha-hasta" value="2025-07-06" required />
+              </div>
+          </form>
+          <button type="submit" class="btn-generar">Generar informe</button>
+      </section>
+        
+    </div>
+    <script src="assets/js/deportista_tutorialPreguntasFrecuentes.js"></script>
+</body>
+</html>

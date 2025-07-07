@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programar alerta - AirTrack</title>
+  <link rel="icon" href="assets/imagenes/logoIcono.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/headerSesionIniciada.css">
+  <link rel="stylesheet" href="assets/css/deportista_tutorialPreguntasFrecuentes.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+      <div class="logo">
+        <a href="index2.html">
+          <img src="assets/imagenes/logoAirtrack.png" alt="Logo Airtrack" />            
+        </a>
+      </div>
+      <nav class="nav">
+        <div class="nav-item"><a href="#">Funcionalidades</a></div>
+        <div class="nav-item"><a href="#">Beneficios</a></div>
+        <div class="nav-item"><a href="#">Testimonios</a></div>
+        <div class="nav-item"><a href="#">Contacto</a></div>
+        <div class="nav-item"><a href="deportistaPrincipal.html">Ver calidad<br>del aire</a></div>
+      </nav>
+      <a href="index.html" class="btn-cerrar">Cerrar sesión</a>
+    </header>
+
+    <div class="contenedor">
+      <div class="sidebar" id="sidebar">
+          <button class="toggle-btn" id="toggle-btn">
+          <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="sidebar-content">
+            <strong class="tipo-usuario">Ambulantes</strong>
+            <nav class="sidebar-nav">
+                <a href="deportista_programarAlerta.html">Programar alerta</a>
+                <a href="deportista_misAlertasRecibidas.html">Mis alertas recibidas</a>
+                <a href="deportista_reportarIncidentes.html">Reportar incidentes</a>
+                <a href="deportistas_misComentarios.html">Mis comentarios</a>
+                <a href="deportista_tutorialPreguntasFrecuentes.html" class="activo">Tutorial y preguntas frecuentes</a>
+                <a href="deportista_otrasApps.html">Otras apps</a>
+                <a href="deportista_verInformeAqi.html">Ver informe de AQI</a>
+                <a href="deportista_informacionContaminantes.html">Información sobre contaminantes</a>
+            </nav>
+          </div>
+      </div>
+      <section class="tutorial-faq">
+          <h2>Tutorial y preguntas frecuentes</h2>
+          <p class="subtitulo">Video tutorial about the product.</p>
+          <div class="video-contenedor">
+            <iframe 
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+              title="Video tutorial AirTrack" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <p class="faq-titulo">Preguntas frecuentes</p>
+
+          <details open>
+            <summary>Cuenta y perfil</summary>
+            <ul class="faq-lista">
+              <li>¿Cómo creo una cuenta en AirTrack?</li>
+              <li>¿Olvidé mi contraseña, qué hago?</li>
+              <li>¿Puedo cambiar mi nombre de usuario?</li>
+              <li>¿Es obligatorio completar todos los datos de mi perfil?</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Organización y gestión</summary>
+          </details>
+
+          <details>
+            <summary>Soporte técnico</summary>
+          </details>
+
+          <details>
+            <summary>Funcionalidades de la página web</summary>
+          </details>
+      </section>
+    </div>
+    <script src="assets/js/deportista_tutorialPreguntasFrecuentes.js"></script>
+</body>
+</html>
