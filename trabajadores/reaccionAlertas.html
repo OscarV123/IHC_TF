@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AirTrack - Vendedor</title>
+  <link rel="icon" href="../assets/imagenes/logoIcono.png" type="image/png">
+  <link rel="stylesheet" href="../assets/css/headerSesionIniciada.css">
+  <link rel="stylesheet" href="../assets/css/reaccionAlertas.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <header class="header">
+      <div class="logo">
+          <a href="../index3.html">
+            <img src="../assets/imagenes/logoAirtrack.png" alt="Logo Airtrack" />            
+          </a>
+      </div>
+      <nav class="nav">
+          <div class="nav-item"><a href="#">Funcionalidades</a></div>
+          <div class="nav-item"><a href="#">Beneficios</a></div>
+          <div class="nav-item"><a href="#">Testimonios</a></div>
+          <div class="nav-item"><a href="#">Contacto</a></div>
+          <div class="nav-item"><a href="../trabajadores/trabajadorPrincipal.html">Ver calidad<br>del aire</a></div>
+      </nav>
+      <a href="../index.html" class="btn-cerrar">Cerrar sesión</a>
+    </header>
+
+    <div class="contenedor">
+        <div class="sidebar" id="sidebar">
+            <button class="toggle-btn" id="toggle-btn">
+            <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="sidebar-content">
+                <strong class="tipo-usuario">Trabajadores</strong>
+                <nav class="sidebar-nav">
+                    <a href="trabajadorPrincipal.html">Estaciones propias</a>
+                    <a href="trabajador_programarAlerta.html">Programar alerta</a>
+                    <a href="#">AirTrack API</a>
+                    <a href="trabajador_dashboards.html">Dashboards</a>
+                    <a href="trabajador_reporte.html">Reporte</a>
+                    <a href="#">Total de atributos</a>
+                    <a href="reaccionAlertas.html" class="activo">Ver reacciones de alertas</a>
+                    <a href="realizarPublicacion.html">Realizar una publicación</a>
+                </nav>
+            </div>
+        </div>
+      
+        <section class="reacciones-alertas">
+            <h2>Reacciones de alertas</h2>
+
+            <div class="tarjeta-alerta">
+                <div class="cabecera-alerta">
+                <div>
+                    <p><strong>AQI: 120</strong></p>
+                    <p>Enviado el: 03/07/2025 - 3:00 pm.</p>
+                    <p>Ubicación: Jirón Cajamarca</p>
+                </div>
+                <div class="respuestas">
+                    <span>Cantidad de respuestas: 5</span>
+                    <button class="toggle-btn">⌄</button>
+                </div>
+                </div>
+                <div class="contenido-alerta">
+                    resumen de IA de los comentarios de las personas
+                </div>
+            </div>
+
+            <div class="tarjeta-alerta">
+                <div class="cabecera-alerta">
+                <div>
+                    <p><strong>AQI: 150</strong></p>
+                    <p>Enviado el: 04/07/2025 - 5:00 pm.</p>
+                    <p>Ubicación: Jirón Ancash</p>
+                </div>
+                <div class="respuestas">
+                    <span>Cantidad de respuestas: 10</span>
+                    <button class="toggle-btn">⌄</button>
+                </div>
+                </div>
+                <div class="contenido-alerta">
+                    resumen de IA de los comentarios de las personas
+                </div>
+            </div>
+        </section>
+
+        
+    </div>
+
+    <script src="../assets/js/deportista_informacionContaminantes.js"></script>
+</body>
+</html>

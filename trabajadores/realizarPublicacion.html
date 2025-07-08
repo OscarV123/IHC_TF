@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AirTrack - Vendedor</title>
+  <link rel="icon" href="../assets/imagenes/logoIcono.png" type="image/png">
+  <link rel="stylesheet" href="../assets/css/headerSesionIniciada.css">
+  <link rel="stylesheet" href="../assets/css/realizarPublicacion.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+  <header class="header">
+      <div class="logo">
+          <a href="../index3.html">
+            <img src="../assets/imagenes/logoAirtrack.png" alt="Logo Airtrack" />            
+          </a>
+      </div>
+      <nav class="nav">
+          <div class="nav-item"><a href="#">Funcionalidades</a></div>
+          <div class="nav-item"><a href="#">Beneficios</a></div>
+          <div class="nav-item"><a href="#">Testimonios</a></div>
+          <div class="nav-item"><a href="#">Contacto</a></div>
+          <div class="nav-item"><a href="../trabajadores/trabajadorPrincipal.html">Ver calidad<br>del aire</a></div>
+      </nav>
+      <a href="../index.html" class="btn-cerrar">Cerrar sesión</a>
+    </header>
+
+    <div class="contenedor">
+        <div class="sidebar" id="sidebar">
+            <button class="toggle-btn" id="toggle-btn">
+            <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="sidebar-content">
+                <strong class="tipo-usuario">Trabajadores</strong>
+                <nav class="sidebar-nav">
+                    <a href="trabajadorPrincipal.html">Estaciones propias</a>
+                    <a href="trabajador_programarAlerta.html">Programar alerta</a>
+                    <a href="#">AirTrack API</a>
+                    <a href="trabajador_dashboards.html">Dashboards</a>
+                    <a href="trabajador_reporte.html">Reporte</a>
+                    <a href="#">Total de atributos</a>
+                    <a href="reaccionAlertas.html">Ver reacciones de alertas</a>
+                    <a href="realizarPublicacion.html" class="activo">Realizar una publicación</a>
+                </nav>
+            </div>
+        </div>
+      
+        <section class="publicacion">
+            <h2>Realizar una publicación</h2>
+            <p class="subtitulo">
+                Si cuenta con un formato de publicación en word, impórtelo desde aquí
+            </p>
+
+            <div class="archivo-wrapper">
+                <label for="archivo-publicacion" class="btn-archivo">Importar word o pdf</label>
+                <input type="file" id="archivo-publicacion" accept=".doc,.docx,.pdf" />
+                <span id="archivo-nombre">Ningún archivo seleccionado</span>
+            </div>
+
+            <form class="form-publicacion" id="form-publicacion">
+                <label for="titulo">Título</label>
+                <input type="text" id="titulo" name="titulo" />
+
+                <label for="contenido">Contenido</label>
+                <textarea id="contenido" name="contenido" rows="10" ></textarea>
+
+                <button type="submit" class="btn-enviar">Enviar publicación</button>
+            </form>
+        </section>
+
+        
+    </div>
+
+    <script>
+        document.getElementById("archivo-publicacion").addEventListener("change", function () {
+            const archivoNombre = document.getElementById("archivo-nombre");
+            archivoNombre.textContent = this.files.length
+                ? this.files[0].name
+                : "Ningún archivo seleccionado";
+        });
+
+        document.getElementById("form-publicacion").addEventListener("submit", function (e) {
+            const titulo = document.getElementById("titulo").value.trim();
+            const contenido = document.getElementById("contenido").value.trim();
+
+            if (!titulo || !contenido) {
+            alert("Por favor complete tanto el título como el contenido.");
+            e.preventDefault(); // Evita que se envíe el formulario
+            return;
+            }
+
+            if (contenido.length < 10) {
+            alert("El contenido debe tener al menos 10 caracteres.");
+            e.preventDefault();
+            return;
+            }
+
+            // Aquí podrías continuar con el envío, guardar en servidor, etc.
+            alert("✅ Publicación enviada correctamente.");
+        });
+
+    </script>
+</body>
+</html>

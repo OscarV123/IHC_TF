@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
-      alert("Fechas válidas. Generando informe...");
+      alert("Fechas válidas. Continuando...");
     });
   });
 
