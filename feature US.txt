@@ -1,0 +1,78 @@
+Feature: US24 - Recomendaciones de autocuidado según contaminante
+    Como deportista,
+    Quiero recibir consejos específicos según el contaminante dominante,
+    Para proteger mi salud al entrenar en condiciones de aire contaminado.
+
+    Escenario 01: Recibo recomendaciones personalizadas según contaminante
+        Given que el AQI esté en nivel insalubre y PM2.5 sea el contaminante dominante,
+        When ingreso a la sección de recomendaciones,
+        Then veré consejos como “Evite correr cerca de avenidas” y “Consuma alimentos ricos en antioxidantes”.
+
+    Escenario 02: Activo recordatorios para hidratación
+        Given que el AQI esté alto,
+        When configuro la opción de recordatorio de hidratación,
+        Then recibiré una notificación para beber agua antes o después del entrenamiento.
+
+
+Feature: US25 - Historial de síntomas y rendimiento
+    Como deportista,
+    Quiero registrar cómo me sentí después de entrenar y ver mi rendimiento junto al AQI,
+    Para identificar patrones entre mi salud y la contaminación.
+
+    Escenario 01: Registro de síntomas luego de entrenar
+        Given que terminé una sesión de entrenamiento,
+        When abro la sección de historial,
+        Then puedo ingresar síntomas como “tos”, “fatiga” o “ojos irritados”.
+
+    Escenario 02: Visualizo gráficos de correlación con AQI
+        Given que tengo varios registros guardados,
+        When accedo a mi historial gráfico,
+        Then veré un gráfico que relaciona mis síntomas y rendimiento con el AQI del día.
+
+
+Feature: US27 - Acceso offline a pronósticos
+    Como deportista,
+    Quiero ver los datos del aire de mis zonas favoritas incluso sin internet,
+    Para decidir dónde entrenar aunque no tenga conexión.
+
+    Escenario 01: Visualizo datos guardados sin conexión
+        Given que estuve conectado anteriormente,
+        When pierdo acceso a internet,
+        Then puedo seguir viendo los pronósticos recientes de mis zonas favoritas.
+
+    Escenario 02: Indicación de última actualización
+        Given que estoy offline,
+        When reviso los datos en la app,
+        Then veré un mensaje que dice “Sin conexión” y la hora de la última actualización.
+
+
+Feature: US40 - Generación de reportes oficiales automatizados
+    Como responsable de comunicaciones,
+    Quiero generar y programar reportes automáticos de calidad del aire,
+    Para difundir información oficial de forma eficiente.
+
+    Escenario 01: Programación de reporte semanal
+        Given que configuro un reporte semanal por región,
+        When llega la fecha de programación,
+        Then la app genera y envía automáticamente el informe PDF a los destinatarios.
+
+    Escenario 02: Selección de plantilla personalizada
+        Given que quiero un reporte diario para medios,
+        When selecciono la plantilla correspondiente,
+        Then el sistema llena automáticamente los datos de AQI y contaminantes relevantes.
+
+
+Feature: US31 - Validación y detección de datos anómalos
+    Como analista de datos,
+    Quiero que el sistema detecte automáticamente valores anómalos en los sensores,
+    Para mantener la calidad y confiabilidad de los datos.
+
+    Escenario 01: Detección de valor fuera de rango
+        Given que un sensor reporta PM2.5 de 999 µg/m³,
+        When el valor supera 3 desviaciones estándar,
+        Then el sistema lo marca como “potencialmente anómalo” en rojo.
+
+    Escenario 02: Visualización en la interfaz
+        Given que hay valores anómalos registrados,
+        When accedo al panel de monitoreo,
+        Then puedo filtrar para mostrar solo los datos sospechosos o excluirlos.
